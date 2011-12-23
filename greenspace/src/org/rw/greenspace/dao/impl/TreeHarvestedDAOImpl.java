@@ -9,7 +9,6 @@ import java.util.List;
 import org.hibernate.Query;
 import org.rw.greenspace.dao.TreeHarvestedDAO;
 import org.rw.greenspace.orm.TreeHarvested;
-import org.rw.greenspace.orm.TreePlanted;
 
 /**
  * @author student
@@ -98,6 +97,7 @@ public class TreeHarvestedDAOImpl extends DAO implements TreeHarvestedDAO {
 		}
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<TreeHarvested> getAllTreeHarvesteds() {
 		try {
@@ -112,6 +112,7 @@ public class TreeHarvestedDAOImpl extends DAO implements TreeHarvestedDAO {
 		}
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<TreeHarvested> getTreeHarvestedByTreeHarvestedName(
 			String treeHarvestedName) {

@@ -10,6 +10,7 @@ import org.rw.greenspace.orm.Tree;
 
 /**
  * @author student
+ * seed data access object
  *
  */
 public interface SeedDAO {

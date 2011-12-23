@@ -9,7 +9,6 @@ import java.util.List;
 import org.hibernate.Query;
 import org.rw.greenspace.dao.TreeDAO;
 import org.rw.greenspace.orm.Tree;
-import org.rw.greenspace.orm.User;
 
 /**
  * @author student
@@ -98,6 +97,7 @@ public class TreeDAOImpl extends DAO implements TreeDAO {
 		}
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<Tree> getAllTrees() {
 		try {

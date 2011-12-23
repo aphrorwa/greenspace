@@ -9,6 +9,7 @@ import org.rw.greenspace.orm.Location;
 
 /**
  * @author student
+ * location data access object
  *
  */
 public interface LocationDAO {

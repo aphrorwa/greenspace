@@ -8,7 +8,6 @@ import java.util.List;
 
 import org.hibernate.Query;
 import org.rw.greenspace.dao.TreePlantedDAO;
-import org.rw.greenspace.orm.Location;
 import org.rw.greenspace.orm.TreePlanted;
 
 /**
@@ -95,6 +94,7 @@ public class TreePlantedDAOImpl extends DAO implements TreePlantedDAO {
 		}
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<TreePlanted> getAllTreePlanteds() {
 		try {
@@ -109,6 +109,7 @@ public class TreePlantedDAOImpl extends DAO implements TreePlantedDAO {
 		}
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<TreePlanted> getTreePlantedByTreePlantedName(
 			String treePlantedName) {

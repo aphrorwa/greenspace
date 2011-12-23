@@ -103,6 +103,7 @@ public class SeedDAOImpl extends DAO implements SeedDAO {
 		try {
 			begin();
 			Query query = getSession().createQuery("from Seed");
+			@SuppressWarnings("unchecked")
 			List<Seed> seeds = query.list();
 			commit();
 			return seeds;
@@ -119,6 +120,7 @@ public class SeedDAOImpl extends DAO implements SeedDAO {
 			Query query = getSession().createQuery(
 					"from Seed where treeName= :ref");
 			query.setString("ref", tree.getTreeName());
+			@SuppressWarnings("unchecked")
 			List<Seed> trees = query.list();
 			commit();
 			return trees;

@@ -9,6 +9,7 @@ import org.rw.greenspace.orm.User;
 
 /**
  * @author student
+ * user access object
  *
  */
 public interface UserDAO {

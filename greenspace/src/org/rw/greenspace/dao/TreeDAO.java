@@ -9,6 +9,7 @@ import org.rw.greenspace.orm.Tree;
 
 /**
  * @author student
+ * tree data access object
  *
  */
 public interface TreeDAO {

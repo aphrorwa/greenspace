@@ -9,10 +9,10 @@ import java.util.List;
 import org.hibernate.Query;
 import org.rw.greenspace.dao.LocationDAO;
 import org.rw.greenspace.orm.Location;
-import org.rw.greenspace.orm.User;
 
 /**
  * @author student
+ * location implementation
  * 
  */
 public class LocationDAOImpl extends DAO implements LocationDAO {
@@ -106,6 +106,7 @@ public class LocationDAOImpl extends DAO implements LocationDAO {
 		try {
 			begin();
 			Query query = getSession().createQuery("from Location");
+			@SuppressWarnings("unchecked")
 			List<Location> locations = query.list();
 			commit();
 			return locations;

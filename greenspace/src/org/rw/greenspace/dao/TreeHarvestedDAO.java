@@ -9,6 +9,7 @@ import org.rw.greenspace.orm.TreeHarvested;
 
 /**
  * @author student
+ * tree harvest access object 
  *
  */
 public interface TreeHarvestedDAO {

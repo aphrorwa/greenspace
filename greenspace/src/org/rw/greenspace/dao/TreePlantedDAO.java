@@ -9,6 +9,7 @@ import org.rw.greenspace.orm.TreePlanted;
 
 /**
  * @author student
+ * tree planted access object
  *
  */
 public interface TreePlantedDAO {

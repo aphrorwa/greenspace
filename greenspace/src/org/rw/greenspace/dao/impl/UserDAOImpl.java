@@ -94,6 +94,7 @@ public class UserDAOImpl extends DAO implements UserDAO {
 		}
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<User> getAllUsers() {
 		try {
@@ -108,6 +109,7 @@ public class UserDAOImpl extends DAO implements UserDAO {
 		}
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<User> getUserByUsername(String username) {
 		try {
@@ -124,6 +126,7 @@ public class UserDAOImpl extends DAO implements UserDAO {
 		}
 	}
 
+	@SuppressWarnings("unchecked")
 	@Override
 	public List<User> getUserByFullName(String fullName) {
 		try {
