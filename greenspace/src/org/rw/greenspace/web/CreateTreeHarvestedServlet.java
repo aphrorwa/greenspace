@@ -41,18 +41,7 @@ public class CreateTreeHarvestedServlet extends HttpServlet {
 			if (pageRedirect.equals("createtreeharvested")) {
 				if (request.getParameter("saveDataTreePlanted") != null) {
 					String tpId = request.getParameter("tpid");
-//					TreePlanted tp = treePlantedDAO.getTreePlantedById(tpId);
-//					String seedId = request.getParameter("seedid");
-//					Seed seed = seedDAO.getSeedById(Integer.parseInt(seedId));
-//					
-//					String date = request.getParameter("date");
-//					String treeHarvestedQuantity = request.getParameter("treeharvestedquantity");
-//					java.sql.Date dat = java.sql.Date.valueOf(date);
-//					tp.setDate(dat);
-//					tp.setTreeQuantity(Integer.parseInt(treeHarvestedQuantity));
-//					tp.setSeed(seed);
-//					treeHarvestedDAO.saveOrUpdateTreeHarvested(treeHarvested)
-
+// Being implemented
 				}
 			}
 			request.setAttribute("treePlanteds", treePlanteds);
